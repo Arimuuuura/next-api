@@ -8,7 +8,7 @@ import { IndexProps } from "@/types/types";
 
 // SSG
 export const getStaticProps: GetStaticProps = async () => {
-  const { results } = await fetchPages();
+  const { results } = await fetchPages({});
   return {
     props: {
       pages: results ? results : [],
