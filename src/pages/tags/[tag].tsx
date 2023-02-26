@@ -1,9 +1,8 @@
 import type { GetStaticPaths, GetStaticProps, NextPage } from "next";
 import Layout from "@/components/Layout";
-import { siteConfig } from "site.config";
 import Card from "@/components/Card";
 import { fetchPages } from "@/utils/notion";
-import { IndexProps, Params, TagProps } from "@/types/types";
+import { Params, TagProps } from "@/types/types";
 import { getMultiSelect } from "@/utils/property";
 
 // SSG

@@ -1,15 +1,9 @@
 import ArticleMeta from "@/components/ArticleMeta";
-import Block from "@/components/Block";
 import Layout from "@/components/Layout";
 import { ArticleProps, Params } from "@/types/types";
 import { fetchBlocksByPageId, fetchPages } from "@/utils/notion";
 import { getText } from "@/utils/property";
-import {
-  GetServerSideProps,
-  GetStaticPaths,
-  GetStaticProps,
-  NextPage,
-} from "next";
+import { GetStaticPaths, GetStaticProps, NextPage } from "next";
 import React from "react";
 import NotionBlocks from "notion-block-renderer";
 

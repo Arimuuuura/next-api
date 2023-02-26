@@ -18,7 +18,6 @@ const Card: FC<CardProps> = ({ page }) => {
             className="w-full static w-full h-auto"
             src={getCover(page.cover)}
             alt=""
-            // objectFit="cover"
             width={400}
             height={225}
             quality={30}
