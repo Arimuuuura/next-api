@@ -1,7 +1,6 @@
 import type { GetStaticProps, NextPage } from "next";
 import Layout from "@/components/Layout";
 import { siteConfig } from "site.config";
-import { sampleCards } from "@/utils/sample";
 import Card from "@/components/Card";
 import { fetchPages } from "@/utils/notion";
 import { IndexProps } from "@/types/types";
