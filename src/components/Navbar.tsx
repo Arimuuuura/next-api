@@ -12,7 +12,7 @@ const Navbar = () => {
           aria-label="breadcrumb"
         >
           <Link href="/" className="text-gray-500 hover:text-gray-600">
-            {siteConfig.title}
+            {`${siteConfig.title}`}
           </Link>
           {/* Breadcrumb */}
           <Breadcrumb />
