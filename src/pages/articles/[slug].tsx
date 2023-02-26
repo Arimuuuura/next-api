@@ -5,6 +5,8 @@ import { fetchBlocksByPageId, fetchPages } from "@/utils/notion";
 import { GetServerSideProps, NextPage } from "next";
 import React from "react";
 import NotionBlocks from "notion-block-renderer";
+import Head from "next/head";
+import { getText } from "@/utils/property";
 
 export const getServerSideProps: GetServerSideProps = async (ctx) => {
   const { slug } = ctx.params as Params;
@@ -24,6 +26,9 @@ export const getServerSideProps: GetServerSideProps = async (ctx) => {
 const Article: NextPage<ArticleProps> = ({ page, blocks }) => {
   return (
     <Layout>
+      <Head>
+        <title>{getText(page.properties.name.title)}</title>
+      </Head>
       <article className="w-full">
         {/* meta section */}
         <div className="my-12">
