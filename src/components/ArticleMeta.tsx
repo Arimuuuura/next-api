@@ -44,7 +44,7 @@ const ArticleMeta: FC<ArticleMetaProps> = ({ page }) => {
                   href={`/tags/${tag}`}
                   className="text-gray-700 no-underline border-b border-solid border-gray-700 opacity-70 mr-3"
                 >
-                  <span>{`#${tag}`}</span>
+                  <span>{`#${tag} `}</span>
                 </Link>
               )
             )}
