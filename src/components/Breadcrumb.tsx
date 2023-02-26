@@ -17,9 +17,9 @@ const Breadcrumb = () => {
               href={`/${joinedPath}`}
               className="text-gray-500 hover:text-gray-600"
             >
-              <>
-                <span className="text-gray-500 mx-2">/</span> {path}
-              </>
+              <span className="text-gray-500 ml-2">
+                /&nbsp;&nbsp;&nbsp;{`${path}`}
+              </span>
             </Link>
           );
         }
