@@ -11,6 +11,7 @@ import {
   NextPage,
 } from "next";
 import React from "react";
+import NotionBlocks from "notion-block-renderer";
 
 export const getStaticPaths: GetStaticPaths = async () => {
   // 存在しうる slug の一覧
@@ -56,9 +57,7 @@ const Article: NextPage<ArticleProps> = ({ page, blocks }) => {
 
         {/* article */}
         <div className="my-12">
-          {blocks.map((block, index) => (
-            <Block key={index} block={block} />
-          ))}
+          <NotionBlocks isCodeHighlighter={true} blocks={blocks} />
         </div>
       </article>
     </Layout>
