@@ -8,7 +8,11 @@ const Footer = () => {
       <div className="container px-6 pt-6 flex flex-col items-center max-w-2xl w-full mx-auto">
         <div className="flex justify-center mb-6 text-white">
           {/* Twitter */}
-          <a href={siteConfig.twitterUrl}>
+          <a
+            href={siteConfig.twitterUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <svg
               aria-hidden="true"
               focusable="false"
@@ -27,7 +31,11 @@ const Footer = () => {
           </a>
 
           {/* Instagram */}
-          <a href={siteConfig.instagramUrl}>
+          <a
+            href={siteConfig.instagramUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <svg
               aria-hidden="true"
               focusable="false"
@@ -45,7 +53,11 @@ const Footer = () => {
             </svg>
           </a>
           {/* Github */}
-          <a href={siteConfig.githubUrl}>
+          <a
+            href={siteConfig.githubUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <svg
               aria-hidden="true"
               focusable="false"
