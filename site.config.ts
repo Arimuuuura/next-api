@@ -1,6 +1,6 @@
 export const siteConfig = {
-  title: "Arimuuuura",
-  twitterUrl: "https://twitter.com/home?lang=ja",
+  title: "Notion API Blog Sample",
+  twitterUrl: "https://twitter.com/arimuuuura_se",
   instagramUrl: "https://www.instagram.com/arisan.co.jp/?hl=ja",
   githubUrl: "https://github.com/Arimuuuura",
 };
